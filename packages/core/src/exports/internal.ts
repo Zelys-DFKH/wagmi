@@ -1,30 +1,10 @@
-////////////////////////////////////////////////////////////////////////////////
-// Actions
-////////////////////////////////////////////////////////////////////////////////
-
-// biome-ignore lint/performance/noBarrelFile: entrypoint module
 export {
   type WatchChainsParameters,
   type WatchChainsReturnType,
   watchChains,
 } from '../actions/watchChains.js'
-
-////////////////////////////////////////////////////////////////////////////////
-// Emitter
-////////////////////////////////////////////////////////////////////////////////
-
-export {
-  createEmitter,
-  Emitter,
-  type EventData,
-} from '../createEmitter.js'
-
-////////////////////////////////////////////////////////////////////////////////
-// Types
-////////////////////////////////////////////////////////////////////////////////
-
+export { createEmitter, Emitter, type EventData } from '../createEmitter.js'
 export type { SelectChains } from '../types/chain.js'
-
 export type {
   ChainIdParameter,
   ConfigParameter,
@@ -32,9 +12,7 @@ export type {
   EnabledParameter,
   ScopeKeyParameter,
 } from '../types/properties.js'
-
 export type { QueryParameter } from '../types/query.js'
-
 export type {
   Compute,
   ExactPartial,
@@ -50,11 +28,6 @@ export type {
   UnionLooseOmit,
   UnionStrictOmit,
 } from '../types/utils.js'
-
-////////////////////////////////////////////////////////////////////////////////
-// Utilities
-////////////////////////////////////////////////////////////////////////////////
-
 export { deepEqual } from '../utils/deepEqual.js'
-
 export { uid } from '../utils/uid.js'
+//# sourceMappingURL=internal.d.ts.map

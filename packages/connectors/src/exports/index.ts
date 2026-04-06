@@ -1,4 +1,3 @@
-// biome-ignore lint/performance/noBarrelFile: entrypoint module
 export {
   type InjectedParameters,
   injected,
@@ -18,3 +17,4 @@ export {
   type WalletConnectParameters,
   walletConnect,
 } from '../walletConnect.js'
+//# sourceMappingURL=index.d.ts.map

@@ -1,8 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-// Tanstack Query
-////////////////////////////////////////////////////////////////////////////////
-
-// biome-ignore lint/performance/noBarrelFile: entrypoint module
 export {
   type CallData,
   type CallOptions,
@@ -12,7 +7,6 @@ export {
   callQueryKey,
   callQueryOptions,
 } from '../query/call.js'
-
 export {
   type ConnectData,
   type ConnectMutate,
@@ -22,7 +16,6 @@ export {
   type ConnectVariables,
   connectMutationOptions,
 } from '../query/connect.js'
-
 export {
   type DeployContractData,
   type DeployContractMutate,
@@ -32,7 +25,6 @@ export {
   type DeployContractVariables,
   deployContractMutationOptions,
 } from '../query/deployContract.js'
-
 export {
   type DisconnectData,
   type DisconnectMutate,
@@ -42,7 +34,6 @@ export {
   type DisconnectVariables,
   disconnectMutationOptions,
 } from '../query/disconnect.js'
-
 export {
   type EstimateFeesPerGasData,
   type EstimateFeesPerGasOptions,
@@ -52,7 +43,6 @@ export {
   estimateFeesPerGasQueryKey,
   estimateFeesPerGasQueryOptions,
 } from '../query/estimateFeesPerGas.js'
-
 export {
   type EstimateGasData,
   type EstimateGasOptions,
@@ -62,7 +52,6 @@ export {
   estimateGasQueryKey,
   estimateGasQueryOptions,
 } from '../query/estimateGas.js'
-
 export {
   type EstimateMaxPriorityFeePerGasData,
   type EstimateMaxPriorityFeePerGasOptions,
@@ -72,7 +61,6 @@ export {
   estimateMaxPriorityFeePerGasQueryKey,
   estimateMaxPriorityFeePerGasQueryOptions,
 } from '../query/estimateMaxPriorityFeePerGas.js'
-
 export {
   type GetBalanceData,
   type GetBalanceOptions,
@@ -82,7 +70,6 @@ export {
   getBalanceQueryKey,
   getBalanceQueryOptions,
 } from '../query/getBalance.js'
-
 export {
   type GetBlobBaseFeeData,
   type GetBlobBaseFeeOptions,
@@ -92,7 +79,6 @@ export {
   getBlobBaseFeeQueryKey,
   getBlobBaseFeeQueryOptions,
 } from '../query/getBlobBaseFee.js'
-
 export {
   type GetBlockData,
   type GetBlockOptions,
@@ -102,7 +88,6 @@ export {
   getBlockQueryKey,
   getBlockQueryOptions,
 } from '../query/getBlock.js'
-
 export {
   type GetBlockNumberData,
   type GetBlockNumberOptions,
@@ -112,7 +97,6 @@ export {
   getBlockNumberQueryKey,
   getBlockNumberQueryOptions,
 } from '../query/getBlockNumber.js'
-
 export {
   type GetBlockTransactionCountData,
   type GetBlockTransactionCountOptions,
@@ -122,7 +106,6 @@ export {
   getBlockTransactionCountQueryKey,
   getBlockTransactionCountQueryOptions,
 } from '../query/getBlockTransactionCount.js'
-
 export {
   type GetBytecodeData,
   type GetBytecodeOptions,
@@ -132,7 +115,6 @@ export {
   getBytecodeQueryKey,
   getBytecodeQueryOptions,
 } from '../query/getBytecode.js'
-
 export {
   type GetCallsStatusData,
   type GetCallsStatusOptions,
@@ -142,7 +124,6 @@ export {
   getCallsStatusQueryKey,
   getCallsStatusQueryOptions,
 } from '../query/getCallsStatus.js'
-
 export {
   type GetCapabilitiesData,
   type GetCapabilitiesOptions,
@@ -152,7 +133,6 @@ export {
   getCapabilitiesQueryKey,
   getCapabilitiesQueryOptions,
 } from '../query/getCapabilities.js'
-
 export {
   type GetConnectorClientData,
   type GetConnectorClientOptions,
@@ -162,7 +142,6 @@ export {
   getConnectorClientQueryKey,
   getConnectorClientQueryOptions,
 } from '../query/getConnectorClient.js'
-
 export {
   type GetContractEventsData,
   type GetContractEventsOptions,
@@ -172,7 +151,6 @@ export {
   getContractEventsQueryKey,
   getContractEventsQueryOptions,
 } from '../query/getContractEvents.js'
-
 export {
   type GetEnsAddressData,
   type GetEnsAddressOptions,
@@ -182,7 +160,6 @@ export {
   getEnsAddressQueryKey,
   getEnsAddressQueryOptions,
 } from '../query/getEnsAddress.js'
-
 export {
   type GetEnsAvatarData,
   type GetEnsAvatarOptions,
@@ -192,7 +169,6 @@ export {
   getEnsAvatarQueryKey,
   getEnsAvatarQueryOptions,
 } from '../query/getEnsAvatar.js'
-
 export {
   type GetEnsNameData,
   type GetEnsNameOptions,
@@ -202,7 +178,6 @@ export {
   getEnsNameQueryKey,
   getEnsNameQueryOptions,
 } from '../query/getEnsName.js'
-
 export {
   type GetEnsResolverData,
   type GetEnsResolverOptions,
@@ -212,7 +187,6 @@ export {
   getEnsResolverQueryKey,
   getEnsResolverQueryOptions,
 } from '../query/getEnsResolver.js'
-
 export {
   type GetEnsTextData,
   type GetEnsTextOptions,
@@ -222,7 +196,6 @@ export {
   getEnsTextQueryKey,
   getEnsTextQueryOptions,
 } from '../query/getEnsText.js'
-
 export {
   type GetFeeHistoryData,
   type GetFeeHistoryOptions,
@@ -232,7 +205,6 @@ export {
   getFeeHistoryQueryKey,
   getFeeHistoryQueryOptions,
 } from '../query/getFeeHistory.js'
-
 export {
   type GetGasPriceData,
   type GetGasPriceOptions,
@@ -242,7 +214,6 @@ export {
   getGasPriceQueryKey,
   getGasPriceQueryOptions,
 } from '../query/getGasPrice.js'
-
 export {
   type GetProofData,
   type GetProofOptions,
@@ -252,7 +223,6 @@ export {
   getProofQueryKey,
   getProofQueryOptions,
 } from '../query/getProof.js'
-
 export {
   type GetStorageAtData,
   type GetStorageAtOptions,
@@ -262,7 +232,6 @@ export {
   getStorageAtQueryKey,
   getStorageAtQueryOptions,
 } from '../query/getStorageAt.js'
-
 export {
   type GetTransactionData,
   type GetTransactionOptions,
@@ -272,7 +241,6 @@ export {
   getTransactionQueryKey,
   getTransactionQueryOptions,
 } from '../query/getTransaction.js'
-
 export {
   type GetTransactionConfirmationsData,
   type GetTransactionConfirmationsOptions,
@@ -282,7 +250,6 @@ export {
   getTransactionConfirmationsQueryKey,
   getTransactionConfirmationsQueryOptions,
 } from '../query/getTransactionConfirmations.js'
-
 export {
   type GetTransactionCountData,
   type GetTransactionCountOptions,
@@ -292,7 +259,6 @@ export {
   getTransactionCountQueryKey,
   getTransactionCountQueryOptions,
 } from '../query/getTransactionCount.js'
-
 export {
   type GetTransactionReceiptData,
   type GetTransactionReceiptOptions,
@@ -302,7 +268,6 @@ export {
   getTransactionReceiptQueryKey,
   getTransactionReceiptQueryOptions,
 } from '../query/getTransactionReceipt.js'
-
 export {
   type GetWalletClientData,
   type GetWalletClientOptions,
@@ -312,7 +277,6 @@ export {
   getWalletClientQueryKey,
   getWalletClientQueryOptions,
 } from '../query/getWalletClient.js'
-
 export {
   type InfiniteReadContractsData,
   type InfiniteReadContractsOptions,
@@ -321,7 +285,6 @@ export {
   infiniteReadContractsQueryKey,
   infiniteReadContractsQueryOptions,
 } from '../query/infiniteReadContracts.js'
-
 export {
   type PrepareTransactionRequestData,
   type PrepareTransactionRequestOptions,
@@ -331,7 +294,6 @@ export {
   prepareTransactionRequestQueryKey,
   prepareTransactionRequestQueryOptions,
 } from '../query/prepareTransactionRequest.js'
-
 export {
   type ReadContractData,
   type ReadContractOptions,
@@ -341,7 +303,6 @@ export {
   readContractQueryKey,
   readContractQueryOptions,
 } from '../query/readContract.js'
-
 export {
   type ReadContractsData,
   type ReadContractsOptions,
@@ -351,7 +312,6 @@ export {
   readContractsQueryKey,
   readContractsQueryOptions,
 } from '../query/readContracts.js'
-
 export {
   type ReconnectData,
   type ReconnectMutate,
@@ -361,7 +321,6 @@ export {
   type ReconnectVariables,
   reconnectMutationOptions,
 } from '../query/reconnect.js'
-
 export {
   type SendCallsData,
   type SendCallsMutate,
@@ -371,7 +330,6 @@ export {
   type SendCallsVariables,
   sendCallsMutationOptions,
 } from '../query/sendCalls.js'
-
 export {
   type SendCallsSyncData,
   type SendCallsSyncMutate,
@@ -381,7 +339,6 @@ export {
   type SendCallsSyncVariables,
   sendCallsSyncMutationOptions,
 } from '../query/sendCallsSync.js'
-
 export {
   type SendTransactionData,
   type SendTransactionMutate,
@@ -391,7 +348,6 @@ export {
   type SendTransactionVariables,
   sendTransactionMutationOptions,
 } from '../query/sendTransaction.js'
-
 export {
   type SendTransactionSyncData,
   type SendTransactionSyncMutate,
@@ -401,7 +357,6 @@ export {
   type SendTransactionSyncVariables,
   sendTransactionSyncMutationOptions,
 } from '../query/sendTransactionSync.js'
-
 export {
   type ShowCallsStatusData,
   type ShowCallsStatusMutate,
@@ -411,7 +366,6 @@ export {
   type ShowCallsStatusVariables,
   showCallsStatusMutationOptions,
 } from '../query/showCallsStatus.js'
-
 export {
   type SignMessageData,
   type SignMessageMutate,
@@ -421,7 +375,6 @@ export {
   type SignMessageVariables,
   signMessageMutationOptions,
 } from '../query/signMessage.js'
-
 export {
   type SignTransactionData,
   type SignTransactionMutate,
@@ -431,7 +384,6 @@ export {
   type SignTransactionVariables,
   signTransactionMutationOptions,
 } from '../query/signTransaction.js'
-
 export {
   type SignTypedDataData,
   type SignTypedDataMutate,
@@ -441,7 +393,6 @@ export {
   type SignTypedDataVariables,
   signTypedDataMutationOptions,
 } from '../query/signTypedData.js'
-
 export {
   type SimulateContractData,
   type SimulateContractOptions,
@@ -451,7 +402,6 @@ export {
   simulateContractQueryKey,
   simulateContractQueryOptions,
 } from '../query/simulateContract.js'
-
 export {
   type SwitchChainData,
   type SwitchChainMutate,
@@ -461,7 +411,6 @@ export {
   type SwitchChainVariables,
   switchChainMutationOptions,
 } from '../query/switchChain.js'
-
 export {
   /** @deprecated use `SwitchConnectionData` instead */
   type SwitchConnectionData as SwitchAccountData,
@@ -485,12 +434,7 @@ export {
   switchConnectionMutationOptions as switchAccountMutationOptions,
   switchConnectionMutationOptions,
 } from '../query/switchConnection.js'
-
-export {
-  hashFn,
-  structuralSharing,
-} from '../query/utils.js'
-
+export { hashFn, structuralSharing } from '../query/utils.js'
 export {
   type VerifyMessageData,
   type VerifyMessageOptions,
@@ -500,7 +444,6 @@ export {
   verifyMessageQueryKey,
   verifyMessageQueryOptions,
 } from '../query/verifyMessage.js'
-
 export {
   type VerifyTypedDataData,
   type VerifyTypedDataOptions,
@@ -510,7 +453,6 @@ export {
   verifyTypedDataQueryKey,
   verifyTypedDataQueryOptions,
 } from '../query/verifyTypedData.js'
-
 export {
   type WaitForCallsStatusData,
   type WaitForCallsStatusOptions,
@@ -520,7 +462,6 @@ export {
   waitForCallsStatusQueryKey,
   waitForCallsStatusQueryOptions,
 } from '../query/waitForCallsStatus.js'
-
 export {
   type WaitForTransactionReceiptData,
   type WaitForTransactionReceiptOptions,
@@ -530,7 +471,6 @@ export {
   waitForTransactionReceiptQueryKey,
   waitForTransactionReceiptQueryOptions,
 } from '../query/waitForTransactionReceipt.js'
-
 export {
   type WatchAssetData,
   type WatchAssetMutate,
@@ -540,7 +480,6 @@ export {
   type WatchAssetVariables,
   watchAssetMutationOptions,
 } from '../query/watchAsset.js'
-
 export {
   type WriteContractData,
   type WriteContractMutate,
@@ -550,7 +489,6 @@ export {
   type WriteContractVariables,
   writeContractMutationOptions,
 } from '../query/writeContract.js'
-
 export {
   type WriteContractSyncData,
   type WriteContractSyncMutate,
@@ -560,3 +498,4 @@ export {
   type WriteContractSyncVariables,
   writeContractSyncMutationOptions,
 } from '../query/writeContractSync.js'
+//# sourceMappingURL=query.d.ts.map

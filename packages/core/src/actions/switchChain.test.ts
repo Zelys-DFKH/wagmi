@@ -71,3 +71,36 @@ test('behavior: not connected', async () => {
   await switchChain(config, { chainId })
   expect(config.state.chainId).toMatchInlineSnapshot('1')
 })
+
+test('behavior: timeout parameter is accepted', async () => {
+  await connect(config, { connector })
+
+  // Just verify that timeout parameter is accepted and doesn't break normal operation
+  const result = await switchChain(config, {
+    chainId: chain.mainnet2.id,
+    timeout: 10_000, // 10 second timeout
+  })
+
+  expect(result.id).toBeDefined()
+  await disconnect(config, { connector })
+})
+
+test('behavior: no timeout if not specified', async () => {
+  const connector_ = config._internal.connectors.setup(
+    mock({
+      accounts,
+    }),
+  )
+  await connect(config, { connector: connector_ })
+
+  const chainId1 = getConnection(config).chainId
+
+  // Without timeout, should succeed
+  await switchChain(config, { chainId: chain.mainnet2.id })
+
+  const chainId2 = getConnection(config).chainId
+  expect(chainId2).toBeDefined()
+  expect(chainId1).not.toBe(chainId2)
+
+  await disconnect(config, { connector: connector_ })
+})

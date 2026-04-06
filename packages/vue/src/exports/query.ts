@@ -1,9 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-// @wagmi/core/query
-////////////////////////////////////////////////////////////////////////////////
-
-// biome-ignore lint/performance/noBarrelFile: entrypoint module
-// biome-ignore lint/performance/noReExportAll: entrypoint module
 export * from '@wagmi/core/query'
 export {
   type UseMutationParameters,
@@ -13,3 +7,4 @@ export {
   useMutation,
   useQuery,
 } from '../utils/query.js'
+//# sourceMappingURL=query.d.ts.map
