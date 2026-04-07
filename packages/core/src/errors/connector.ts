@@ -21,3 +21,16 @@ export class SwitchChainNotSupportedError extends BaseError {
     super(`"${connector.name}" does not support programmatic chain switching.`)
   }
 }
+
+export type SwitchChainTimeoutErrorType = SwitchChainTimeoutError & {
+  name: 'SwitchChainTimeoutError'
+}
+export class SwitchChainTimeoutError extends BaseError {
+  override name = 'SwitchChainTimeoutError'
+
+  constructor({ chainId, timeout }: { chainId: number; timeout: number }) {
+    super(
+      `Chain switch to chain ID ${chainId} timed out after ${timeout}ms. The request may have been rejected, ignored, or the wallet was backgrounded.`,
+    )
+  }
+}

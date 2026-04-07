@@ -19,6 +19,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         return contextValue
       },
@@ -29,6 +30,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(error).toEqualTypeOf<SwitchChainErrorType>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue | undefined>()
@@ -40,6 +42,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(data).toEqualTypeOf<Compute<Chain>>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue>()
@@ -53,6 +56,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue | undefined>()
       },
@@ -68,6 +72,7 @@ test('context', () => {
           | undefined
         chainId: number
         connector?: Connector | undefined
+        timeout?: number | undefined
       }
     | undefined
   >()
@@ -85,6 +90,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(error).toEqualTypeOf<SwitchChainErrorType>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue | undefined>()
@@ -96,6 +102,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(data).toEqualTypeOf<Compute<Chain>>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue>()
@@ -109,6 +116,7 @@ test('context', () => {
             | undefined
           chainId: number
           connector?: Connector | undefined
+          timeout?: number | undefined
         }>()
         expectTypeOf(context).toEqualTypeOf<typeof contextValue | undefined>()
       },
